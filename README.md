@@ -12,10 +12,6 @@ By using spring cloud gateaway in gw-server, it allows us to manage the requests
 
 The "SQL Scripts" folder comprises SQL scripts designed to create MySQL databases for the kredi-bizde service, akbank service, and garanti service. Since we only keep applications in akbank and garanti service, I did not put its EER Diagram. EER Diagram of kredi-bizde service can be found in EER_Diagram.png file.
 
-Basic auth:
-spring.security.user.name = spring
+Basic auth: spring.security.user.name = spring, spring.security.user.password = 1234
 
-spring.security.user.password = 1234
-
-Swagger UI:
-localhost:8080/swagger-ui/index.html
+Swagger UI: localhost:8080/swagger-ui/index.html
