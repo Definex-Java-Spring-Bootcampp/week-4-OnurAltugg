@@ -1,0 +1,35 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: kredinbizde-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: http://localhost:8080
+          predicates:
+             - Path=/api/users/**
+        - id: bank-service
+          uri: http://localhost:8080
+          predicates:
+             - Path=/api/banks/**
+        - id: applications-service
+          uri: http://localhost:8080
+          predicates:
+             - Path=/api/applications/**
+        - id: campaign-service
+          uri: http://localhost:8080
+          predicates:
+             - Path=/api/campaign/**
+        - id: akbank-service
+          uri: http://localhost:8081
+          predicates:
+             - Path=/api/akbank/v1/applications/**
+        - id: garanti-service
+          uri: http://localhost:8082
+          predicates:
+             - Path=/api/garanti/v1/applications/**
+        
+        
+
