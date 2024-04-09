@@ -17,4 +17,4 @@ spring.security.user.name = spring
 spring.security.user.password = 1234
 
 Swagger UI:
-http://localhost:8080/swagger-ui/index.html
+localhost:8080/swagger-ui/index.html
