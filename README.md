@@ -14,6 +14,7 @@ The "SQL Scripts" folder comprises SQL scripts designed to create MySQL database
 
 Basic auth:
 spring.security.user.name = spring
+
 spring.security.user.password = 1234
 
 Swagger UI:
