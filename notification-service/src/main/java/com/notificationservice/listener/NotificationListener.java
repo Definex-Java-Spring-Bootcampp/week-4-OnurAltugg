@@ -15,7 +15,8 @@ public class NotificationListener {
 	private final NotificationStrategy notificationStrategy;
 
     @RabbitListener(queues = "${rabbitmq.queue}")
-    public void sendNotification(@Qualifier("emailNotification")NotificationDTO notificationDTO) {
+    public void sendNotification(@Qualifier("emailNotification")NotificationDTO notificationDTO) { //burada qualifier verdiğimiz için polimorfik davranamaz. 
+	    //gelen notification type göre burası değişmeli. bir ufak if yazabilirsin.
     	notificationStrategy.sendNotification(notificationDTO);
     }
 
